@@ -1,0 +1,82 @@
+#carBookContainer {
+    text-align: left;
+    overflow: hidden;
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+#carBookContainer img {
+    object-fit: contain;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputBox input {
+    width: 250px;
+    height: 30px;
+}
+
+#carBookContent {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-direction: row;
+    justify-content: space-evenly;
+    min-height: 100px;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+#carBookContent .inputBox {
+    padding: 10px;
+}
+
+#carBookBox {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+#carBookBox h1 {
+    text-align: center;
+    margin-top: 5%;
+}
+
+#backButton {
+    background-color: white;
+    color: black;
+    border: 0;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    size: 40px;
+}
+
+@media (max-width: 480px) {
+    #carBookContent {
+        margin-left: 0;
+    }
+
+    #backButton {
+        width: 80px;
+        margin: 10px;
+        font-size: 14px;
+        border-radius: 1px;
+    }
+
+    .inputBox label {
+        font-weight: 500;
+        background-color: rgb(255, 255, 255, 0.5);
+    }
+}
+
+input {
+    border: 0;
+    border-bottom: 1px solid;
+    border-radius: 1px;
+}

@@ -1,0 +1,23 @@
+.currentBookingBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+
+}
+
+#scrollDiv {
+    overflow: scroll;
+}
+
+.currentBookingBox h4 {
+    font-weight: 500;
+    font-size: 16px;
+    margin: 10px;
+    width: 100px;
+}
+
+#currentBookingBoxHeader h4 {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: deepskyblue;
+}

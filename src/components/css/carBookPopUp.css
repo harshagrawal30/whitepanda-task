@@ -1,0 +1,50 @@
+#carBookPopUpContainer {
+    width: min(600px, 90vw);
+    height: min(400px, 70vh);
+    background-color: white;
+    box-shadow: 0 1px 5px;
+    position: absolute;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 10px 0 0;
+}
+
+#popUpImg {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+#popUpContent {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 600;
+}
+
+#popUpButton {
+    width: 125px;
+    height: auto;
+    font-size: 20px;
+    padding: 10px;
+    size: 30px;
+    border-radius: 2px;
+    background-color: white;
+    border: 0;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    white-space: nowrap;
+
+}

@@ -1,0 +1,97 @@
+.box {
+    margin: 5% 7.5%;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    justify-content: space-between;
+    max-width: 100vw;
+
+}
+
+#detailBox {
+    text-align: center;
+}
+
+#oneRow1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#oneRow1 h4 {
+    font-weight: 500;
+}
+
+#carDetailBottom h1,
+hr {
+    color: deepskyblue;
+}
+
+#carDetailBottom {
+    margin: 0 7.5%;
+    text-align: left;
+    margin-bottom: 5%;
+
+}
+
+#carDetailBottom h4 {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#Avail {
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    width: 200px;
+    padding: 10px;
+}
+
+#NAvail {
+    background-color: grey;
+    color: white;
+    font-size: 20px;
+    width: 200px;
+}
+
+#currentBookingBox {
+    margin: 0 7.5%;
+    text-align: left;
+}
+
+#currentBookingBox h1,
+hr {
+    color: deepskyblue;
+}
+
+#rentVroom {
+    margin: 0 5%;
+    text-align: left;
+    margin-top: 10%;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+#NBook {
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    padding: 10px;
+    size: 40px;
+    border-radius: 2px;
+    white-space: nowrap;
+}
+
+#CurrUnavail {
+    font-size: 13px;
+    display: block;
+    color: red;
+}
+
+@media (max-width:480px) {
+    .box {
+        display: flex;
+        flex-direction: column;
+    }
+}

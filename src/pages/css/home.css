@@ -1,0 +1,55 @@
+.moveLeft {
+    display: flex;
+    align-self: flex-start;
+    margin-left: 5%;
+    font-weight: 500;
+}
+
+#listHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#listHeader h3 {
+    font-weight: 600;
+    color: grey;
+}
+
+#socialIcons {
+    display: flex;
+    flex-direction: row;
+    max-width: min(200px, 50vw);
+    justify-content: space-between;
+    margin: 10px 0 10px 5%;
+    cursor: pointer;
+}
+
+#footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin: 60px 5% 10px 5%;
+}
+
+#footerFirstRow,
+#footerSecondRow {
+    display: flex;
+    flex-direction: row;
+    width: min(350px, 90vw);
+    justify-content: space-between;
+}
+
+@media (max-width:790px) {
+    #footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #Clogo {
+        max-width: 200px;
+    }
+}
