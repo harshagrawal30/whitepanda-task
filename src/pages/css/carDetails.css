@@ -1,20 +1,35 @@
 .box {
     margin: 5% 7.5%;
     display: grid;
-    grid-template-columns: 2fr 2fr;
-    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
     max-width: 100vw;
+    border: 1px solid rgb(211,211,211,0.5);
 
 }
 
 #detailBox {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    padding-left: 100px;
+    padding-bottom: 30px;
 }
 
+#imageBoxCarDetail{
+    height: 100%;
+    /* object-fit: contain; */
+}
+#carImage{
+    height: 100%;
+    width: 100%;
+    object-fit:fill;
+}
 #oneRow1 {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    width: 200px;
+    /* align-items: center; */
 }
 
 #oneRow1 h4 {
@@ -22,10 +37,13 @@
 }
 
 #carDetailBottom h1,
-hr {
-    color: deepskyblue;
+.carDetailHr {
+    color: rgba(56, 40, 80, 0.501);
 }
+.carDetailHr{
+    margin-bottom: 30px;
 
+}
 #carDetailBottom {
     margin: 0 7.5%;
     text-align: left;
@@ -41,16 +59,17 @@ hr {
 #Avail {
     background-color: green;
     color: white;
-    font-size: 20px;
-    width: 200px;
+    font-size: 15px;
+    width: 160px;
     padding: 10px;
 }
 
 #NAvail {
     background-color: grey;
     color: white;
-    font-size: 20px;
-    width: 200px;
+    font-size: 15px;
+    width: 160px;
+    padding: 10px;
 }
 
 #currentBookingBox {
@@ -59,8 +78,8 @@ hr {
 }
 
 #currentBookingBox h1,
-hr {
-    color: deepskyblue;
+.carDetailHr {
+    color: rgba(56, 40, 80, 0.501);
 }
 
 #rentVroom {
@@ -81,6 +100,8 @@ h1 {
     size: 40px;
     border-radius: 2px;
     white-space: nowrap;
+    background-color: rgb(128,128,128,0.5);
+    color:rgb(255, 255, 255,0.5);
 }
 
 #CurrUnavail {
@@ -88,10 +109,32 @@ h1 {
     display: block;
     color: red;
 }
-
+@media (max-width:798px){
+    /* .box {
+        display: flex;
+        flex-direction: column;
+        margin:5% 7.5%;
+    } */
+    #detailBox {
+        align-items: center;
+        padding-left: 0;
+        border: 0;
+    }
+    #carImage{
+        height: 100%;
+        width: 100%;
+        object-fit:contain;
+    }
+}
 @media (max-width:480px) {
+    #detailBox {
+        align-items: center;
+        padding-left: 0;
+        border: 0;
+    }
     .box {
         display: flex;
         flex-direction: column;
+        margin:5% 7.5%;
     }
 }

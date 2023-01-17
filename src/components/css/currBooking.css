@@ -13,11 +13,11 @@
     font-weight: 500;
     font-size: 16px;
     margin: 10px;
-    width: 100px;
+    width: 150px;
 }
 
 #currentBookingBoxHeader h4 {
     font-weight: 600;
     text-transform: uppercase;
-    color: deepskyblue;
+    color: rgba(56, 40, 80, 0.501);
 }

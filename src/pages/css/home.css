@@ -2,20 +2,40 @@
     display: flex;
     align-self: flex-start;
     margin-left: 5%;
-    font-weight: 500;
+    margin-top: 100px;
+    font-weight: 600;
+    /* border: 1px solid; */
+}
+
+#Clogo{
+    max-width: 180px;
+    margin-top: 30px;
 }
 
 #listHeader {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    /* max-width:90vw; */
+    width: 80%;
+    margin-bottom: -30px;
+    text-align: center;
 }
 
 #listHeader h3 {
     font-weight: 600;
+    font-size: 17px;
     color: grey;
 }
-
+#homeHr{
+    width: 90%;
+    background-color: grey;
+    color: aliceblue;
+    border: 0.5px solid;
+    /* height: 1; */
+    /* font-size: 0px; */
+    /* size: 10px; */
+}
 #socialIcons {
     display: flex;
     flex-direction: row;

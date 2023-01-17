@@ -11,12 +11,17 @@ function Home() {
         <div>
             <img src={img1} alt='img1' id='Clogo' />
             <div>
-                <h1 className='moveLeft'>Cars For Rent</h1>
+                <h1 className='moveLeft'>Cars for rent</h1>
+                <hr id='homeHr'/>
             </div>
             <div>
                 <div id='listHeader'>
+                    {/* <><span></span></> */}
+                    <><span></span></>
+                    <><span></span></>
                     <h3>Car Details</h3>
-                    <h3>Rent Per Day</h3>
+                    <><span></span></>
+                    <h3>RENT PER DAY</h3>
                     <><span></span></>
                 </div>
                 <div>

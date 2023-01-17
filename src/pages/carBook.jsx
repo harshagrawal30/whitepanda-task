@@ -2,6 +2,7 @@ import React, { useReducer, useState } from 'react'
 import carBookImg from '../assests/carBookImage.png'
 import './css/carBook.css'
 import { useNavigate, useLocation } from 'react-router-dom'
+import img1 from '../assests/img1.png'
 import { bookCar } from '../app/redux/carsReducer';
 import { useDispatch } from 'react-redux';
 import CarBookPopUp from '../components/carBookPopUp';
@@ -43,9 +44,17 @@ function CarBook() {
         <div>
             {showPopUp ? <CarBookPopUp booked={booked} car={car} dates={{ issueDate: issueDate, endDate: endDate }} /> : null}
             <div id='carBookContainer'>
-                <img src={carBookImg} />
+                <img id='carBookBgImg' src={carBookImg} />
                 <div id='carBookBox'>
+                <div id='bookingDetailsHeaderMobile'>
+                <img src={img1} alt='img1' id='Clogo' />
                     <h1>Booking Details</h1>
+                    </div>
+                    <div id='bookingDetailsHeaderDesktop'>
+                        {/* <><span></span></> */}
+                    <h1 id='bookDetailHeading'>Booking details</h1>
+                    <img src={img1} alt='img1' id='Clogo' />
+                    </div>
                     <form onSubmit={submit}>
                         <div>
                             <div id='carBookContent'>
@@ -68,7 +77,7 @@ function CarBook() {
                                     <input type='date' min={issueDate} onChange={(e) => setEndDate(e.target.value)} required placeholder='DD/MM/YYYY' />
                                 </div>
                             </div>
-                            <div id='carBookContent'>
+                            <div id='carBookContentButtons'>
                                 <div className='inputBox'>
                                     <button id='backButton' type='button' onClick={() => navigate(-1)}>Back</button>
                                 </div>

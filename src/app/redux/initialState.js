@@ -7,7 +7,7 @@ let car1 = {
     id:1,
     name: 'Hyundai Grand i10',
     image: i10,
-    color: 'white',
+    color: 'White',
     seater: 4,
     rentPerDay: 350,
     vehNo: 'MP09C3944',

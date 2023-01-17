@@ -5,7 +5,7 @@ function CurrBooking({ bookedBy }) {
         <div id='scrollDiv'>
             <div className='currentBookingBox' id='currentBookingBoxHeader'>
                 <h4>Name</h4>
-                <h4>Mobile</h4>
+                <h4>PHONE NUMBER</h4>
                 <h4>Issue Date</h4>
                 <h4>End Date</h4>
             </div>
